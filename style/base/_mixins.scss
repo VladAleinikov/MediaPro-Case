@@ -1,0 +1,7 @@
+@mixin flex ($dir: row, $just: center, $align: center, $gap: unset){
+      display: flex;
+      flex-direction: $dir;
+      justify-content: $just;
+      align-items: $align;
+      gap: $gap;
+}

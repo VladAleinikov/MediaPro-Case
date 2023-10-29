@@ -1,0 +1,16 @@
+.btn {
+      cursor: pointer;
+      width: fit-content;
+      padding: 38px 30px;
+      font-size: 0.9em;
+      font-weight: 700;
+      color: #fff;
+      background: #e4131d;
+      border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+      .btn {
+            padding: 15px 10px;
+      }
+}

@@ -1,0 +1,24 @@
+.company-life {
+      margin-top: 140px;
+}
+.company-life-container {
+      @include flex($just: space-between);
+      flex-wrap: wrap;
+
+      h2 {
+            text-align: center;
+      }
+      img,
+      h2 {
+            width: 33%;
+      }
+}
+
+@media (max-width: 768px) {
+      .company-life {
+            margin-top: 70px;
+            h2{
+                  font-size: 5vw;
+            }
+      }
+}

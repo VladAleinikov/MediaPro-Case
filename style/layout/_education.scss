@@ -1,0 +1,144 @@
+.education {
+      margin-top: 170px;
+      padding-top: 150px;
+      padding-bottom: 130px;
+      background: #3b3b3b;
+      background-image: url("../assets/bg/noise-bg.png");
+      background-size: cover;
+}
+.education-container {
+      @include flex(column, $gap: 30px);
+
+      h2,
+      h4,
+      p {
+            color: #fff;
+      }
+      .education__abilities {
+            margin: 40px 0;
+            @include flex($align: start, $gap: 15px);
+            flex-wrap: wrap;
+
+            .abilities__item {
+                  max-width: 330px;
+                  @include flex($gap: 8px);
+
+                  img {
+                        width: unset;
+                        height: unset;
+                  }
+            }
+      }
+      .education__list {
+            width: 100%;
+            @include flex(column, $gap: 50px);
+
+            .education__item {
+                  @include flex($just: space-between);
+                  width: 100%;
+                  height: 300px;
+                  padding: 40px 33px;
+                  border-radius: 20px;
+                  background: #fff;
+
+                  h2,
+                  h4,
+                  p {
+                        color: #282828;
+                  }
+                  .item__left {
+                        .left__title {
+                              position: relative;
+                              padding-left: 15px;
+                              margin-bottom: 23px;
+
+                              &::before {
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    top: 8px;
+                                    border-radius: 50%;
+                                    background-color: rgb(255, 0, 0);
+                                    width: 7px;
+                                    height: 7px;
+                              }
+                        }
+                        .left__content {
+                              @include flex(column, start, start, 20px);
+                              max-width: 480px;
+                              width: 100%;
+                              padding: 40px 32px;
+                              padding-right: 0;
+                              border-radius: 10px;
+                              background-color: #f3f2f2;
+                              background-image: url("../assets/bg/circle-bg.png");
+                              background-position: bottom -408px right -550px;
+                        }
+                  }
+                  .item__separator {
+                        width: 1px;
+                        height: 100%;
+                        background-color: #3b3b3b33;
+                  }
+                  .item__right {
+                        @include flex(column, $align: start, $gap: 40px);
+                        max-width: 500px;
+                        width: 100%;
+                  }
+            }
+      }
+      .btn {
+            width: 330px;
+            height: 85px;
+            padding: 0;
+      }
+}
+
+@media (max-width: 768px) {
+      .education {
+            margin-top: 80px;
+            padding-top: 70px;
+            padding-bottom: 60px;
+      }
+      .education-container {
+            gap: 15px;
+
+            .education__abilities {
+                  margin: 20px 0;
+            }
+            .education__list {
+                  gap: 20px;
+
+                  .education__item {
+                        @include flex(column, space-between, $gap: 15px);
+                        height: fit-content;
+
+                        .item__left {
+                              .left__title {
+                                    margin-bottom: 10px;
+
+                                    &::before {
+                                          top: 4px;
+                                    }
+                              }
+                              .left__content {
+                                    gap: 10px;
+                                    padding: 20px 10px;
+                              }
+                        }
+                        .item__separator {
+                              height: 1px;
+                              width: 100%;
+                        }
+                        .item__right {
+                              gap: 20px;
+                        }
+                  }
+            }
+            .btn {
+                  width: 250px;
+                  height: 60px;
+                  padding: 0;
+            }
+      }
+}

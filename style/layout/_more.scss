@@ -1,0 +1,52 @@
+.more {
+      margin-top: 90px;
+}
+.more-container {
+      @include flex(column, start, start, 65px);
+
+      .more__list {
+            width: 100%;
+            @include flex($just: space-between, $gap: 17px);
+            flex-wrap: wrap;
+
+            .more__item {
+                  @include flex($gap: 10px);
+                  max-width: 305px;
+
+                  .item__img {
+                        @include flex();
+                        border-radius: 10px;
+                        background-color: #282828;
+                        min-width: 91px;
+                        min-height: 91px;
+
+                        img{
+                              width: unset;
+                              height: unset;
+                        }
+                        p{
+                              font-size: 0.9em;
+                        }
+                  }
+            }
+      }
+}
+
+@media (max-width: 768px) {
+      .more {
+      margin-top: 40px;
+}
+.more-container {
+      gap: 35px;
+
+      .more__list {
+            gap: 10px;
+
+            .more__item {
+                  .item__img {
+                        transform: scale(0.8)
+                  }
+            }
+      }
+}
+}

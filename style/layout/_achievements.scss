@@ -1,0 +1,41 @@
+.achievements {
+      margin-top: 200px;
+      background: #3b3b3b;
+      background-image: url("../assets/bg/noise-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.achievements-container {
+      padding-top: 140px;
+      padding-bottom: 120px;
+      @include flex(column, $gap: 85px);
+
+      h2,
+      h3,
+      p {
+            color: #fff;
+            text-align: center;
+      }
+      h3 {
+            font-size: 2.5em;
+      }
+      .achievements__list {
+            width: 100%;
+            @include flex($just: space-around);
+            flex-wrap: wrap;
+
+            .achievements__item {
+                  @include flex(column, $gap: 25px);
+            }
+      }
+}
+@media (max-width: 768px) {
+      .achievements {
+            margin-top: 80px;
+      }
+      .achievements-container {
+            padding-top: 70px;
+            padding-bottom: 60px;
+            @include flex(column, $gap: 40px);
+      }
+}

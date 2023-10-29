@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кейсы</title>
+  <link rel="stylesheet" href="./style/main.css" />
+  <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+</head>
+<?php
+if (isset($_POST["email"]) && isset($_POST["tel"])) {
+  $to = "Ваша почта на которую придет письмо";
+  $subject = "Форма пользователя";
+  $message = "Email - " . $_POST["email"] . " \nТелефон - " . $_POST["tel"];
+  mail($to, $subject, $message);
+}
+?>
+
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-container container">
+        <div class="hero__partners">
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img src="./assets/hero/Вsk_logo.png" alt="Вsk_logo">
+              <p>Резидент Сколково</p>
+            </li>
+            <li class="partners__item">
+              <img src="./assets/hero/sber.png" alt="sber">
+              <p>Одобренная франшиза от Сбербанка</p>
+            </li>
+          </ul>
+        </div>
+        <article class="hero__content">
+          <p class="content__subtitle">ПАРТНЁРСКАЯ ПРОГРАММА MEDIAPRO</p>
+          <h1>
+            Зарабатывайте
+            на внедрении
+            <span>умных роботов</span>
+          </h1>
+          <p>С поддержкой команды BigData</p>
+          <ul class="content__employees">
+            <li class="employees__item"><img src="./assets/hero/employee-1.png" alt="employee-1"></li>
+            <li class="employees__item"><img src="./assets/hero/employee-2.png" alt="employee-2"></li>
+            <li class="employees__item"><img src="./assets/hero/employee-3.png" alt="employee-3"></li>
+            <li class="employees__item"><img src="./assets/hero/employee-4.png" alt="employee-4"></li>
+          </ul>
+          <button class="btn open-modal">УЗНАТЬ ПОДРОБНЕЕ</button>
+        </article>
+        <aside class="hero__aside">
+          <h3>
+            Аудио-кейсы применения робота
+          </h3>
+          <ul class="aside__audio">
+            <li class="audio__item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45px" height="45px">
+                <path fill-rule="evenodd" opacity="0.302" fill="rgb(255, 0, 0)" d="M22.500,-0.000 C34.926,-0.000 44.1000,10.073 44.1000,22.500 C44.1000,34.926 34.926,44.1000 22.500,44.1000 C10.074,44.1000 -0.000,34.926 -0.000,22.500 C-0.000,10.073 10.074,-0.000 22.500,-0.000 Z" />
+                <path fill-rule="evenodd" fill="rgb(255, 0, 0)" d="M22.500,6.1000 C31.060,6.1000 37.1000,13.939 37.1000,22.500 C37.1000,31.060 31.060,37.1000 22.500,37.1000 C13.939,37.1000 6.1000,31.060 6.1000,22.500 C6.1000,13.939 13.939,6.1000 22.500,6.1000 Z" />
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M28.897,22.414 L17.761,28.843 L17.761,15.984 L28.897,22.414 Z" />
+              </svg>
+              <p>
+                Робот<br>
+                в тех поддержке
+              </p>
+            </li>
+            <li class="audio__item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45px" height="45px">
+                <path fill-rule="evenodd" opacity="0.302" fill="rgb(255, 0, 0)" d="M22.500,-0.000 C34.926,-0.000 44.1000,10.073 44.1000,22.500 C44.1000,34.926 34.926,44.1000 22.500,44.1000 C10.074,44.1000 -0.000,34.926 -0.000,22.500 C-0.000,10.073 10.074,-0.000 22.500,-0.000 Z" />
+                <path fill-rule="evenodd" fill="rgb(255, 0, 0)" d="M22.500,6.1000 C31.060,6.1000 37.1000,13.939 37.1000,22.500 C37.1000,31.060 31.060,37.1000 22.500,37.1000 C13.939,37.1000 6.1000,31.060 6.1000,22.500 C6.1000,13.939 13.939,6.1000 22.500,6.1000 Z" />
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M28.897,22.414 L17.761,28.843 L17.761,15.984 L28.897,22.414 Z" />
+              </svg>
+              <p>
+                Робот<br>
+                нанимает сотрудников
+              </p>
+            </li>
+            <li class="audio__item">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45px" height="45px">
+                <path fill-rule="evenodd" opacity="0.302" fill="rgb(255, 0, 0)" d="M22.500,-0.000 C34.926,-0.000 44.1000,10.073 44.1000,22.500 C44.1000,34.926 34.926,44.1000 22.500,44.1000 C10.074,44.1000 -0.000,34.926 -0.000,22.500 C-0.000,10.073 10.074,-0.000 22.500,-0.000 Z" />
+                <path fill-rule="evenodd" fill="rgb(255, 0, 0)" d="M22.500,6.1000 C31.060,6.1000 37.1000,13.939 37.1000,22.500 C37.1000,31.060 31.060,37.1000 22.500,37.1000 C13.939,37.1000 6.1000,31.060 6.1000,22.500 C6.1000,13.939 13.939,6.1000 22.500,6.1000 Z" />
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M28.897,22.414 L17.761,28.843 L17.761,15.984 L28.897,22.414 Z" />
+              </svg>
+              <p>
+                Робот<br>
+                продаёт
+              </p>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="benefits-container container">
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <p>ПОДДЕРЖКА</p>
+            <h4>
+              <span>Оперативная поддержка</span> куратора в рабочее время
+            </h4>
+            <img src="./assets/benefits/support.png" alt="support">
+          </li>
+          <li class="benefits__item">
+            <p>СООБЩЕСТВО</p>
+            <h4>
+              <span>Закрытое сообщество</span> специальные предложения для участников
+            </h4>
+            <img src="./assets/benefits/community.png" alt="community">
+          </li>
+          <li class="benefits__item">
+            <p>ОБУЧЕНИЕ</p>
+            <h4>
+              <span>Обучение</span> в IT-сфере по продажам и по разработке
+            </h4>
+            <img src="./assets/benefits/education.png" alt="education">
+          </li>
+          <li class="benefits__item">
+            <p>ВОЗНАГРАЖДЕНИЕ</p>
+            <h4>
+              <span>Стабильное вознаграждение,</span> окупаемость с первого клиента
+            </h4>
+            <img src="./assets/benefits/reward.png" alt="reward">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="achievements">
+      <div class="achievements-container container">
+        <h2>Наши достижения</h2>
+        <ul class="achievements__list">
+          <li class="achievements__item">
+            <h3>24ч</h3>
+            <p>
+              на создание<br>
+              робота
+            </p>
+          </li>
+          <li class="achievements__item">
+            <h3>x10</h3>
+            <p>
+              рост компании<br>
+              в 2022 году
+            </p>
+          </li>
+          <li class="achievements__item">
+            <h3>>1500</h3>
+            <p>
+              роботов<br>
+              на платформе
+            </p>
+          </li>
+          <li class="achievements__item">
+            <h3>3 региона</h3>
+            <p>
+              СНГ, Юго-Восточная<br>
+              Азия, Латинская Америка
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="more">
+      <div class="more-container container">
+        <h2>А еще...</h2>
+        <ul class="more__list">
+          <li class="more__item">
+            <div class="item__img"><img src="./assets/more/inc.png" alt="inc"></div>
+            <p>
+              Топ-15 стартапов
+              России по версии
+              Inc.Russia
+            </p>
+          </li>
+          <li class="more__item">
+            <div class="item__img"><img src="./assets/more/digital-awards.png" alt="digital-awards"></div>
+            <p>
+              Лауреты премии
+              Digital Leaders
+              Award 2022
+            </p>
+          </li>
+          <li class="more__item">
+            <div class="item__img"><img src="./assets/more/sk.png" alt="sk"></div>
+            <p>
+              Резиденты Сколково,
+              набрали 25 баллов
+              из 25 в экспертизе
+            </p>
+          </li>
+          <li class="more__item">
+            <div class="item__img"><img src="./assets/more/inc.png" alt="inc"></div>
+            <p>
+              Топ-2 в сфере
+              искусственный интеллект по
+              версии Inc. Russia
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="company-life">
+      <div class="company-life-container container">
+        <img src="./assets/company-life/company-life-1.png" alt="company-life-1">
+        <img src="./assets/company-life/company-life-2.png" alt="company-life-2">
+        <img src="./assets/company-life/company-life-3.png" alt="company-life-3">
+        <img src="./assets/company-life/company-life-4.png" alt="company-life-4">
+        <h2><span>
+            Жизнь<br>
+            компании
+          </span></h2>
+        <img src="./assets/company-life/company-life-5.png" alt="company-life-5">
+        <img src="./assets/company-life/company-life-6.png" alt="company-life-6">
+        <img src="./assets/company-life/company-life-7.png" alt="company-life-7">
+        <img src="./assets/company-life/company-life-8.png" alt="company-life-8">
+      </div>
+    </section>
+    <section class="robot-use">
+      <div class="robot-use-container container">
+        <h2>Применения голосового робота</h2>
+        <ul class="robot-use__list">
+          <li class="robot-use__item">
+            <p>
+              НАЗВАНИЕ КОМПАНИИ
+            </p>
+            <div class="item__preview">
+              <p><b><span>Выявили</span> заинтересованныхи сделали предложение</b></p>
+            </div>
+            <div class="item__audio">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45px" height="45px">
+                <path fill-rule="evenodd" opacity="0.302" fill="rgb(255, 0, 0)" d="M22.500,-0.000 C34.926,-0.000 44.1000,10.073 44.1000,22.500 C44.1000,34.926 34.926,44.1000 22.500,44.1000 C10.074,44.1000 -0.000,34.926 -0.000,22.500 C-0.000,10.073 10.074,-0.000 22.500,-0.000 Z">
+                </path>
+                <path fill-rule="evenodd" fill="rgb(255, 0, 0)" d="M22.500,6.1000 C31.060,6.1000 37.1000,13.939 37.1000,22.500 C37.1000,31.060 31.060,37.1000 22.500,37.1000 C13.939,37.1000 6.1000,31.060 6.1000,22.500 C6.1000,13.939 13.939,6.1000 22.500,6.1000 Z">
+                </path>
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M28.897,22.414 L17.761,28.843 L17.761,15.984 L28.897,22.414 Z">
+                </path>
+              </svg>
+              <p>
+                <b>Видео Алексея Иванова,</b><br>
+                о BigData на YC Cases Night
+              </p>
+            </div>
+            <ul class="item__info">
+              <li class="info__item">
+                <h5>20 000</h5>
+                <p>Потенциальных клиентов</p>
+              </li>
+              <li class="info__item">
+                <h5>5%</h5>
+                <p>Согласий на предложение</p>
+              </li>
+              <li class="info__item">
+                <h5>102 ₽</h5>
+                <p>Стоимость 1 лида</p>
+              </li>
+            </ul>
+          </li>
+          <li class="robot-use__item">
+            <p>
+              НАЗВАНИЕ КОМПАНИИ
+            </p>
+            <div class="item__preview">
+              <p><b><span>Выявили</span> заинтересованныхи сделали предложение</b></p>
+            </div>
+            <div class="item__audio">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45px" height="45px">
+                <path fill-rule="evenodd" opacity="0.302" fill="rgb(255, 0, 0)" d="M22.500,-0.000 C34.926,-0.000 44.1000,10.073 44.1000,22.500 C44.1000,34.926 34.926,44.1000 22.500,44.1000 C10.074,44.1000 -0.000,34.926 -0.000,22.500 C-0.000,10.073 10.074,-0.000 22.500,-0.000 Z">
+                </path>
+                <path fill-rule="evenodd" fill="rgb(255, 0, 0)" d="M22.500,6.1000 C31.060,6.1000 37.1000,13.939 37.1000,22.500 C37.1000,31.060 31.060,37.1000 22.500,37.1000 C13.939,37.1000 6.1000,31.060 6.1000,22.500 C6.1000,13.939 13.939,6.1000 22.500,6.1000 Z">
+                </path>
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M28.897,22.414 L17.761,28.843 L17.761,15.984 L28.897,22.414 Z">
+                </path>
+              </svg>
+              <p>
+                <b>Видео Алексея Иванова,</b><br>
+                о BigData на YC Cases Night
+              </p>
+            </div>
+            <ul class="item__info">
+              <li class="info__item">
+                <h5>20 000</h5>
+                <p>Потенциальных клиентов</p>
+              </li>
+              <li class="info__item">
+                <h5>5%</h5>
+                <p>Согласий на предложение</p>
+              </li>
+              <li class="info__item">
+                <h5>102 ₽</h5>
+                <p>Стоимость 1 лида</p>
+              </li>
+            </ul>
+          </li>
+          <li class="robot-use__item">
+            <p>
+              НАЗВАНИЕ КОМПАНИИ
+            </p>
+            <div class="item__preview">
+              <p><b><span>Выявили</span> заинтересованныхи сделали предложение</b></p>
+            </div>
+            <div class="item__audio">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45px" height="45px">
+                <path fill-rule="evenodd" opacity="0.302" fill="rgb(255, 0, 0)" d="M22.500,-0.000 C34.926,-0.000 44.1000,10.073 44.1000,22.500 C44.1000,34.926 34.926,44.1000 22.500,44.1000 C10.074,44.1000 -0.000,34.926 -0.000,22.500 C-0.000,10.073 10.074,-0.000 22.500,-0.000 Z">
+                </path>
+                <path fill-rule="evenodd" fill="rgb(255, 0, 0)" d="M22.500,6.1000 C31.060,6.1000 37.1000,13.939 37.1000,22.500 C37.1000,31.060 31.060,37.1000 22.500,37.1000 C13.939,37.1000 6.1000,31.060 6.1000,22.500 C6.1000,13.939 13.939,6.1000 22.500,6.1000 Z">
+                </path>
+                <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M28.897,22.414 L17.761,28.843 L17.761,15.984 L28.897,22.414 Z">
+                </path>
+              </svg>
+              <p>
+                <b>Видео Алексея Иванова,</b><br>
+                о BigData на YC Cases Night
+              </p>
+            </div>
+            <ul class="item__info">
+              <li class="info__item">
+                <h5>20 000</h5>
+                <p>Потенциальных клиентов</p>
+              </li>
+              <li class="info__item">
+                <h5>5%</h5>
+                <p>Согласий на предложение</p>
+              </li>
+              <li class="info__item">
+                <h5>102 ₽</h5>
+                <p>Стоимость 1 лида</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="education">
+      <div class="education-container container">
+        <h2>Обучение в IT от практиков</h2>
+        <p>в основе курсов опыт основателей и более 100 экспертов сервиса</p>
+        <ul class="education__abilities">
+          <li class="abilities__item">
+            <h4>Пока вы учитесь, для вас доступно:</h4>
+          </li>
+          <li class="abilities__item">
+            <img src="./assets/icons/abilities-icon.png" alt="abilities">
+            <p>
+              Проверка выполненных заданий с обратной связью
+            </p>
+          </li>
+          <li class="abilities__item">
+            <img src="./assets/icons/abilities-icon.png" alt="abilities">
+            <p>
+              3 консультации с куратором Tomoru во время обучения
+            </p>
+          </li>
+          <li class="abilities__item">
+            <img src="./assets/icons/abilities-icon.png" alt="abilities">
+            <p>
+              Доступ на 2 года к видео-урокам и обновлениям курса
+            </p>
+          </li>
+        </ul>
+        <ul class="education__list">
+          <li class="education__item">
+            <div class="item__left">
+              <div class="left__content">
+                <h4>
+                  Сопровождение<br>
+                  клиентов
+                </h4>
+                <p>
+                  Научитесь управлять проектом
+                  от согласования скрипта
+                  до боевого запуска робота
+                </p>
+              </div>
+            </div>
+            <div class="item__separator"></div>
+            <div class="item__right">
+              <h4>
+                После обучения вы научитесь
+              </h4>
+              <p>
+                Брифовать клиента, писать скрипт для робота, отслеживать конверсию и увеличивать её.
+              </p>
+            </div>
+          </li>
+          <li class="education__item">
+            <div class="item__left">
+              <p class="left__title"><b>Обязательно для бизнес-консультантов</b></p>
+              <div class="left__content">
+                <h4>
+                  Продажи
+                </h4>
+                <p>
+                  Научитесь продавать сложные IT-продукты и находить клиентов
+                </p>
+              </div>
+            </div>
+            <div class="item__separator"></div>
+            <div class="item__right">
+              <h4>
+                После обучения вы узнаете, как
+              </h4>
+              <p>
+                Выстраивать систему продаж, проводить диагностики бизнеса клиентов, доводить клиента до покупки.
+              </p>
+            </div>
+          </li>
+          <li class="education__item">
+            <div class="item__left">
+              <p class="left__title"><b>Обязательно для разработчиков</b></p>
+              <div class="left__content">
+                <h4>
+                  Создание роботов
+                </h4>
+                <p>
+                  Научитесь создавать умных роботов на «Продвинутом курсе создателя роботов»
+                </p>
+              </div>
+            </div>
+            <div class="item__separator"></div>
+            <div class="item__right">
+              <h4>
+                Результаты обучения
+              </h4>
+              <p>
+                Вы получите сертификат, подтверждающий возможность создавать роботов на платформе Tomoru и зарабатывать
+                на этом.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <button class="btn open-modal">УЗНАТЬ ПОДРОБНЕЕ</button>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews-container container">
+        <h2>Отзывы наших партнеров</h2>
+        <!-------------------- Ссылки на видео вставлять здесь -------------------->
+        <ul class="reviews__list">
+          <li class="review__item" video="../assets/reviews/review.mp4">
+            <img src="./assets/icons/play.svg" alt="play" class="item__play">
+            <img src="./assets/reviews/reviews-1.png" alt="reviews-1" class="item__bg">
+          </li>
+          <li class="review__item" video="../assets/reviews/review.mp4">
+            <img src="./assets/icons/play.svg" alt="play" class="item__play">
+            <img src="./assets/reviews/reviews-2.png" alt="reviews-2" class="item__bg">
+          </li>
+          <li class="review__item" video="../assets/reviews/review.mp4">
+            <img src="./assets/icons/play.svg" alt="play" class="item__play">
+            <img src="./assets/reviews/reviews-3.png" alt="reviews-3" class="item__bg">
+          </li>
+          <li class="review__item" video="../assets/reviews/review.mp4">
+            <img src="./assets/icons/play.svg" alt="play" class="item__play">
+            <img src="./assets/reviews/reviews-4.png" alt="reviews-4" class="item__bg">
+          </li>
+          <li class="review__item" video="../assets/reviews/review.mp4">
+            <img src="./assets/icons/play.svg" alt="play" class="item__play">
+            <img src="./assets/reviews/reviews-5.png" alt="reviews-5" class="item__bg">
+          </li>
+          <li class="review__item" video="../assets/reviews/review.mp4">
+            <img src="./assets/icons/play.svg" alt="play" class="item__play">
+            <img src="./assets/reviews/reviews-6.png" alt="reviews-6" class="item__bg">
+          </li>
+          <li class="review__item" video="../assets/reviews/review.mp4">
+            <img src="./assets/icons/play.svg" alt="play" class="item__play">
+            <img src="./assets/reviews/reviews-7.png" alt="reviews-7" class="item__bg">
+          </li>
+          <li class="review__item" video="../assets/reviews/review.mp4">
+            <img src="./assets/icons/play.svg" alt="play" class="item__play">
+            <img src="./assets/reviews/reviews-8.png" alt="reviews-8" class="item__bg">
+          </li>
+          <li class="review__item" video="../assets/reviews/review.mp4">
+            <img src="./assets/icons/play.svg" alt="play" class="item__play">
+            <img src="./assets/reviews/reviews-9.png" alt="reviews-9" class="item__bg">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="materials">
+      <div class="materials-container container">
+        <h2>Получите наши материалы</h2>
+        <ul class="materials__list">
+          <li class="materials__item">
+            <div class="item__img"><img src="./assets/materials/youtube.png" alt="youtube"></div>
+            <p>
+              Часовую видеопрезентацию
+              от основателя компании
+            </p>
+          </li>
+          <li class="materials__item">
+            <div class="item__img"><img src="./assets/materials/adobe.png" alt="adobe"></div>
+            <p>
+              Бизнес план - как за 6 месяцев выйти
+              на прибыль в 1,000,000р чистыми
+            </p>
+          </li>
+          <li class="materials__item">
+            <div class="item__img"><img src="./assets/materials/document.png" alt="document"></div>
+            <p>
+              Календарный план запуска
+              бизнеса за 23 дня
+            </p>
+          </li>
+          <li class="materials__item">
+            <div class="item__img"><img src="./assets/materials/layouts.png" alt="layouts"></div>
+            <p>
+              Консультацию с франчайзинговым
+              экспертом
+            </p>
+          </li>
+          <li class="materials__item">
+            <div class="item__img"><img src="./assets/materials/document.png" alt="document"></div>
+            <p>
+              Финансовая модель и расчет
+              окупаемости
+            </p>
+          </li>
+          <li class="materials__item">
+            <button class="btn">ПОЛУЧИТЬ МАТЕРИАЛЫ</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="links">
+      <div class="links-container container">
+        <ul class="links__list">
+          <li class="links__item">
+            <h3>
+              Остались
+              вопросы?
+            </h3>
+            <button class="btn open-modal">ЗАДАТЬ</button>
+          </li>
+          <li class="links__item">
+            <h3>
+              Сайт MediaPro
+            </h3>
+            <button class="btn open-modal">ПОСЕТИТЬ</button>
+          </li>
+          <li class="links__item">
+            <h3>
+              Полезные ссылки
+            </h3>
+            <button class="btn open-modal">ИЗУЧИТЬ</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <div class="modal" id="modal">
+    <h2>Оставить заявку</h2>
+    <div id="close-modal">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+        <path fill="#ff0000" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+      </svg>
+    </div>
+    <form action="" method="post">
+      <input type="tel" name="tel" placeholder="+7(___)___-__-__" required minlength="17" maxlength="17" id="tel">
+      <input required type="email" name="email" placeholder="E-mail" />
+      <button class="btn">Получить</button>
+      <input required type="checkbox" name="" id="modal-checkbox" />
+      <label for="modal-checkbox"><span>Согласие на обработку</span> заявок с сайтов для
+        компаний-клиентов</label>
+    </form>
+  </div>
+  <div class="modal-video" id="modal-video"></div>
+  <div id="modal-bg"></div>
+</body>
+<script src="./script.js"></script>
+
+</html>

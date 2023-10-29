@@ -1,0 +1,67 @@
+.links{
+      margin-top: 150px;
+      margin-bottom: 190px;
+}
+.links-container{
+      .links__list{
+            @include flex($gap: 25px);
+            flex-wrap: wrap;
+
+            .links__item{
+                  position: relative;
+                  @include flex(column, start, start, 40px);
+                  max-width: 405px;
+                  width: 100%;
+                  height: 330px;
+                  padding: 50px 140px 100px 40px;
+                  background-image: url("../assets/bg/link-bg.png");
+                  border-radius: 20px;
+
+                  &:first-child{
+                  background-image: url("../assets/bg/questions-bg.png");
+                  }
+                  .btn{
+                        width: 220px;
+                        height: 60px;
+                        padding: 0;
+                  }
+                  img{
+                        position: absolute;
+                        z-index: -1;
+                  }
+            }
+      }
+}
+
+@media (max-width: 768px) {
+      .links{
+      margin-top: 60px;
+      margin-bottom: 60px;
+}
+.links-container{
+      .links__list{
+            gap: 10px;
+
+            .links__item{
+                  position: relative;
+                  @include flex(column, start, start, 40px);
+                  max-width: 350px;
+                  height: 300px;
+                  padding: 30px 50px 50px 30px;
+
+                  &:first-child{
+                  background-image: url("../assets/bg/questions-bg.png");
+                  }
+                  .btn{
+                        width: 180px;
+                        height: 50px;
+                        padding: 0;
+                  }
+                  img{
+                        position: absolute;
+                        z-index: -1;
+                  }
+            }
+      }
+}
+}

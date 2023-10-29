@@ -1,0 +1,41 @@
+.reviews {
+      margin-top: 170px;
+}
+.reviews-container {
+      @include flex(column, $gap: 50px);
+
+      .reviews__list {
+            width: 100%;
+            @include flex($gap: 18px);
+            flex-wrap: wrap;
+
+            .review__item {
+                  cursor: pointer;
+                  @include flex();
+                  position: relative;
+                  min-width: 414px;
+                  min-height: 265px;
+
+                  .item__play {
+                        position: absolute;
+                        width: 96px;
+                        height: 96px;
+                  }
+            }
+      }
+}
+
+@media (max-width: 768px) {
+      .reviews {
+            margin-top: 70px;
+      }
+      .reviews-container {
+            gap: 20px;
+
+            .reviews__list {
+                  justify-content: start;
+                  flex-wrap: nowrap;
+                  overflow-y: scroll;
+            }
+      }
+}
